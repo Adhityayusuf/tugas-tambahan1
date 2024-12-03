@@ -1,22 +1,22 @@
 import java.util.Scanner;
 public class tugas5 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String[] namaMahasiswa = new String[3];
         double[][] nilaiMahasiswa = new double[3][5];
         double totalSemuaNilai = 0;
         int totalJumlahNilai = 0;
         for (int i = 0; i < 3; i++) {
             System.out.print("Masukkan nama mahasiswa ke-" + (i + 1) + ": ");
-            namaMahasiswa[i] = scanner.nextLine();
+            namaMahasiswa[i] = sc.nextLine();
             System.out.println("Masukkan nilai untuk " + namaMahasiswa[i] + ":");
             for (int j = 0; j < 5; j++) {
                 System.out.print("Nilai ke-" + (j + 1) + ": ");
-                nilaiMahasiswa[i][j] = scanner.nextDouble();
+                nilaiMahasiswa[i][j] = sc.nextDouble();
                 totalSemuaNilai += nilaiMahasiswa[i][j];
                 totalJumlahNilai++;
             }
-            scanner.nextLine();
+            sc.nextLine();
         }
         System.out.println("\nRata-rata nilai per mahasiswa:");
         for (int i = 0; i < 3; i++) {
@@ -29,6 +29,6 @@ public class tugas5 {
         }
         double rataRataKeseluruhan = totalSemuaNilai / totalJumlahNilai;
         System.out.printf("\nRata-rata keseluruhan mahasiswa: %.2f%n", rataRataKeseluruhan);
-        scanner.close();
+        sc.close();
     }
 }
