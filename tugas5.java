@@ -28,7 +28,7 @@ public class tugas5 {
             System.out.println(namaMahasiswa[i] + " : " + rataRata);
         }
         double rataRataKeseluruhan = totalSemuaNilai / totalJumlahNilai;
-        System.out.printf("\nRata-rata keseluruhan mahasiswa: %.2f%n", rataRataKeseluruhan);
+        System.out.print("\nRata-rata keseluruhan mahasiswa: " + rataRataKeseluruhan);
         sc.close();
     }
 }
