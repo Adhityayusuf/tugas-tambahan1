@@ -4,7 +4,6 @@ public class tugas1_2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan input (detik) : ");
         int input = sc.nextInt();
-
         int jam = input / 3600;
         int menit = (input % 3600) / 60;
         int detik = input % 60;
