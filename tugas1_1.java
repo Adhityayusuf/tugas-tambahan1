@@ -4,7 +4,7 @@ public class tugas1_1 {
         Scanner sc = new Scanner(System.in);
         System.out.println("=== PERHITUNGAN SUHU ===");
         int suhu;
-        double hasil = 0.0;
+        double hasil;
         System.out.print("Masukkan suhu (dalam celcius): ");
         suhu = sc.nextInt();
         hasil = ((suhu * 9) / 5 ) + 32;
