@@ -31,4 +31,4 @@ public class tugas5 {
         System.out.print("\nRata-rata keseluruhan mahasiswa: " + rataRataKeseluruhan);
         sc.close();
     }
-}
+} 
